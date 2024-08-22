@@ -1,0 +1,93 @@
+
+\documentclass[12pt]{article} % Specifies font size
+
+\usepackage[margin=1in]{geometry} % Sets all four margins to 1 inch
+\usepackage{amssymb} % Access to extra math symbols
+\usepackage{amsmath} % Access to extra math symbols
+\usepackage{calc} % Gives access to a basic calculator 
+\newcommand\blank{\underline{\hspace{1cm}}} % Gives a blank 
+
+\newcommand{\sixprobs}[6]{
+\begin{minipage}[t]{0.07\textwidth}
+%\itm %muting removes problem number
+#1 \end{minipage} \hfill
+\begin{minipage}[t]{0.07\textwidth}
+%\itm %muting removes problem number
+#2 \end{minipage} \hfill 
+\begin{minipage}[t]{0.07\textwidth}
+%\itm %muting removes problem number
+#3 \end{minipage} \hfill
+\begin{minipage}[t]{0.07\textwidth}
+%\itm %muting removes problem number
+#4 \end{minipage} \hfill
+\begin{minipage}[t]{0.07\textwidth}
+%\itm %muting removes problem number
+#5 \end{minipage} \hfill
+\begin{minipage}[t]{0.07\textwidth}
+%\itm %muting removes problem number
+#6 \end{minipage}
+} % Fits six problems on a line
+
+%addition
+\newcommand\addi[2]{
+  $\begin{array}{rr} 
+   &  #1 \\ 
+    + & #2 \\ \hline 
+  \end{array}$}
+
+%subtraction
+\newcommand\subt[2]{
+  $\begin{array}{rr}
+    & #1 \\ 
+    - & #2 \\ \hline
+  \end{array}$}
+
+%multiplication
+\newcommand\mult[2]{
+$\begin{array}{rr} 
+ & #1 \\ 
+ \times & #2 \\ \hline 
+ \end{array}$}
+
+%division
+\newcommand\divi[2]{
+$\\ #1 \; \begin{array}{|l}
+\hline #2
+\end{array}$
+}
+
+%reducing fractions
+\newcommand\redu[2]{
+$\begin{array}{l}
+\\ $Reduce:$ \\[1ex]
+\dfrac{#1}{#2} 
+\end{array}$
+}
+
+%factorization
+\newcommand\fact[1]{
+$\begin{array}{l}
+\\ $Factorize:$ \\[1ex] #1
+\end{array}$
+}
+
+%FORMATTING----------------------------------------------%
+\pagestyle{empty} % Ensures that no page numbers are printed
+\parskip = 0.2 in % Puts a little space between paragraphs 
+\parindent = 0.0 in % Enforces no indentation for paragraphs
+%-------------------------------------------------------------------%
+
+%-----------CONTENT-------------------------------------------------%
+\title{\vspace{-2.5cm}Little Kid's Math Problems}
+\date{\vspace{-2.5cm}\today}
+
+
+\begin{document}
+\maketitle{\vspace{-0.5cm}}
+
+\textit{Directions:} Solve the maximum number of problems within 60 seconds.\vspace{-1.2cm}
+
+\input{|python little_kid_math_hw.py}
+
+\end{document} 
+%-------------------------------------------------------------------%
