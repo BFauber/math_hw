@@ -3,5 +3,11 @@ Math homework for an elementary student (**little kid**) and an advanced element
 
 21Aug2024
 
+---
+
 ### How to use:
 Place both the PY and TEX files in the same directory and run the LaTeX compiler. Edit the PY file to achieve the desired number range and problem type. More info on LaTeX and compilers at: [LaTeX project](https://www.latex-project.org/) or [Overleaf.com](https://www.overleaf.com/learn)
+
+### Example output:
+
+![image](BigKidMathExample.jpg)
