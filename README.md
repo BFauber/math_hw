@@ -3,7 +3,5 @@ Math homework for an advanced elementary or middle school kid. Auto-generates ma
 
 21Aug2024
 
-####
-
-*To use:*
+## How to use:
 Place both the PY and TEX files in the same directory and run the LaTeX or TEX compiler. Edit the PY file to achieve the desired number range and problem type.
