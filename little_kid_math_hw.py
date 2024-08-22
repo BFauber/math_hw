@@ -1,5 +1,3 @@
-#works in concert with main.tex file
-
 import numpy as np
 from functools import reduce
 
